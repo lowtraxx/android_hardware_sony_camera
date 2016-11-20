@@ -42,7 +42,7 @@ LOCAL_C_INCLUDES+= $(kernel_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 
 ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 24 ))" )))
-LOCAL_C_INCLUDES += $(call project-path-for,qcom-media)/msm8974/mm-core/inc
+LOCAL_C_INCLUDES += $(call project-path-for,qcom-media)/mm-core/inc
 else
 LOCAL_C_INCLUDES += $(call project-path-for,qcom-media)/default/mm-core/inc
 endif
